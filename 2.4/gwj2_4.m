@@ -3,8 +3,8 @@ m=628;
 syms x a b c d e;
 diff((a*x+m*c)/(c*x^2+a))
 pretty(diff((a*x+m*c)/(c*x^2+a)))
-vpa(diff(subs((100*x+m)/(x^2+100),x,m^(1/3))),8) 
 x=m^(1/3)
+vpa(diff(subs((100*x+m)/(x^2+100),x,m^(1/3))),8) 
 f=@(x)(100*x+628)/(x^2+100);
 for j=1:5
     x0=(100*rand-50)
